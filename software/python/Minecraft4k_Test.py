@@ -20,10 +20,11 @@ FRAGMENT_SHADER = '''
 #define PI 3.141592654
 
 //WU=world units (blocks)
-#define ML_WIDTH 50.0 //33.59788359788 //microlens picth/diameter (px)
+#define ML_WIDTH 33.59788359788 //microlens picth/diameter (px)
 #define RATIO_WH 1.154700538 //2*sqrt(3)/3
 #define ML_WIDTH_WU 0.05 //microlens pitch/diameter (wu)
-#define ML_FOV_DEG 45.0 //microlens field of view in degrees
+#define ML_FOV_DEG 90.0 //microlens field of view in degrees
+#define MLA_SIZE 18
 
 const float ML_HEIGHT = ML_WIDTH*RATIO_WH;
 const float uv_mul = tan(PI*ML_FOV_DEG/360.0);
@@ -55,6 +56,11 @@ void main() {
     float parity = mod(abs(lens_row),2);
     float lens_col = floor((new_coord.x+parity*ML_WIDTH/2.0)/ML_WIDTH) - 0.5*parity;
     float loc_x = new_coord.x-lens_col*ML_WIDTH;
+    
+    if ((abs(lens_row) >= MLA_SIZE) || (abs(lens_col) >= float(MLA_SIZE)-abs(lens_row/2.0))) {
+        f_color = vec4(0.0, 0.0, 0.0, 0.0);
+        return;
+    }
     
     vec2 mlc = vec2(lens_col*ML_WIDTH_WU, 3.0*lens_row*RATIO_WH*ML_WIDTH_WU/4.0);
     float ox = cpos.x+mlc.x*ctri.z+mlc.y*ctri.y*ctri.w;
