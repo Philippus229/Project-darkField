@@ -1,2 +1,2 @@
-# Project-darkField
-A cheap (&lt;100$) do-it-yourself light field VR headset (WIP)
+# Project darkField
+WIP, will add more information when it's done
