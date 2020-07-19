@@ -11,3 +11,6 @@ While experimenting around I realized that, while unsuitable for VR, the microle
 ## Hardware
 - 2K LCD from AliExpress (LS055R1SX04)
 - Raspberry Pi 4 Model B (2GB RAM)
+
+## Software
+WIP, the Minecraft thing doesn't work that well with the current microlens arrays
