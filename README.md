@@ -9,8 +9,8 @@ While experimenting around I realized that, while unsuitable for VR, the microle
 **Notes:** First put in the steel balls, then slap some silicone on top that will stick to whatever you decide to use to cover it up but not to the metal spheres or the 3D printed part. I just used some clear silicone that we had at home and the transparent part of a CD case which I roughened on one side with some sandpaper to help the silicone stick. Then I just put it in a bench vice over night and removed the steel balls from the finished mold by rubbing the exposed side with my thumb (bad idea, should've probably used something like an eraser instead) to losen them and to remove some of the silicone covering them (they'll just fall out at some point and you can clip off the unwanted silicone with some pliers (f.e. the ones that come with the ELEGOO Mars))
 
 ## Hardware
-- 2K LCD from AliExpress (LS055R1SX04)
-- Raspberry Pi 4 Model B (2GB RAM)
+- 2K LCD (LS055R1SX04) with driver board from AliExpress (~60$)
+- Raspberry Pi 4 Model B (2GB RAM) (just had to use this because my PC doesn't have an HDMI ouput)
 
 ## Software
 WIP, the Minecraft thing doesn't work that well with the current microlens arrays
