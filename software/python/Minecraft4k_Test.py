@@ -67,7 +67,7 @@ void main() {
     float oy = cpos.y+mlc.y*ctri.x;
     float oz = cpos.z-mlc.x*ctri.w+mlc.y*ctri.y*ctri.z;
     
-    vec2 uv = uv_mul*vec2(loc_x/ML_WIDTH, loc_y/ML_HEIGHT);
+    vec2 uv = uv_mul*vec2(loc_x/ML_WIDTH, loc_y/ML_WIDTH);
     float zd0 = ctri.x+uv.y*ctri.y;
     float yd0 = uv.y*ctri.x-ctri.y;
     float xd0 = uv.x*ctri.z+zd0*ctri.w;
