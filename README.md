@@ -13,7 +13,7 @@ While experimenting around I realized that, while unsuitable for VR, the microle
 - Raspberry Pi 4 Model B (2GB RAM) (just had to use this because my PC doesn't have an HDMI ouput)
 
 ## Software
-Probably gonna fix the Minecraft thing at some point, but for now I wrote a raymarcher for the display and it works way better than expected (pictures coming soon). The raymarcher was just meant for testing purposes, I'm probably going to make a Unity plugin similar to the one for The Looking Glass next (or a depth media viewer).
+Probably gonna fix the Minecraft thing at some point, but for now I wrote a raymarcher for the display and it works much better than expected (pictures coming soon). The raymarcher was just meant for testing purposes, I'm probably going to make a Unity plugin similar to the one for The Looking Glass next (or a depth media viewer).
 
 ### Screenshots, etc.
 **Raymarcher demo scene #2**
