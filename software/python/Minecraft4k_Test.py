@@ -55,7 +55,7 @@ void main() {
     
     float parity = mod(abs(lens_row),2);
     float lens_col = floor((new_coord.x+parity*ML_WIDTH/2.0)/ML_WIDTH) - 0.5*parity;
-    float loc_x = new_coord.x-lens_col*ML_WIDTH;
+    float loc_x = new_coord.x-(lens_col+0.5)*ML_WIDTH;
     
     if ((abs(lens_row) >= MLA_SIZE) || (abs(lens_col) >= float(MLA_SIZE)-abs(lens_row/2.0))) {
         f_color = vec4(0.0, 0.0, 0.0, 0.0);
